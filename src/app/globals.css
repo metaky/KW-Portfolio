@@ -1,0 +1,364 @@
+@import "tailwindcss";
+
+/* Tailwind v4 Theme Configuration */
+@theme {
+  /* Primary brand colors - Forest Green */
+  --color-primary-50: #f0f7f2;
+  --color-primary-100: #dceee1;
+  --color-primary-200: #bbdcc6;
+  --color-primary-300: #8ec4a0;
+  --color-primary-400: #5fa676;
+  --color-primary-500: #4A7C59;
+  --color-primary-600: #3d6849;
+  --color-primary-700: #32533c;
+  --color-primary-800: #2a4332;
+  --color-primary-900: #24382b;
+  --color-primary-950: #111f17;
+
+  /* Stitch accent colors */
+  --color-accent-blue: #7FB3D5;
+  --color-accent-yellow: #F9E79F;
+  --color-accent-green: #A9DFBF;
+}
+
+/* Custom CSS Variables */
+:root {
+  /* Typography */
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+
+  /* Primary brand colors - Forest Green (for CSS usage) */
+  --color-primary: #4A7C59;
+
+  /* Watercolor accent colors (legacy) */
+  --color-watercolor-rose: #fce7f3;
+  --color-watercolor-peach: #ffedd5;
+  --color-watercolor-lavender: #ede9fe;
+  --color-watercolor-mint: #d1fae5;
+  --color-watercolor-sky: #e0f2fe;
+  --color-watercolor-cream: #fefce8;
+
+  /* Surface colors */
+  --color-surface-light: #FAFAF9;
+  --color-surface: #f5f5f5;
+  --color-surface-dark: #0F172A;
+
+  /* Shadows */
+  --shadow-soft: 0 2px 15px -3px rgba(0, 0, 0, 0.07), 0 10px 20px -2px rgba(0, 0, 0, 0.04);
+  --shadow-soft-lg: 0 10px 40px -10px rgba(0, 0, 0, 0.1), 0 20px 25px -5px rgba(0, 0, 0, 0.05);
+  --shadow-hover: 0 20px 50px -12px rgba(0, 0, 0, 0.15), 0 30px 40px -10px rgba(0, 0, 0, 0.1);
+
+  /* Backgrounds */
+  --bg-watercolor-gradient: radial-gradient(ellipse at top left, rgba(249, 231, 159, 0.4) 0%, transparent 50%),
+    radial-gradient(ellipse at top right, rgba(127, 179, 213, 0.3) 0%, transparent 50%),
+    radial-gradient(ellipse at bottom center, rgba(169, 223, 191, 0.2) 0%, transparent 50%);
+}
+
+/* Base styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-surface-light);
+  color: #1e293b;
+  min-height: 100vh;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+/* Gradient text utility - Stitch-style blue to green */
+@layer utilities {
+  .gradient-text {
+    background: linear-gradient(to right, #0891b2 0%, #14b8a6 50%, #22c55e 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
+
+/* ============================================
+   WATERCOLOR BACKGROUND EFFECTS
+   ============================================ */
+
+/* Fixed watercolor gradient background */
+.watercolor-bg {
+  background-image: radial-gradient(circle at 10% 20%, rgba(249, 231, 159, 0.4) 0%, transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(127, 179, 213, 0.3) 0%, transparent 40%),
+    radial-gradient(circle at 50% 50%, rgba(169, 223, 191, 0.2) 0%, transparent 60%);
+  filter: blur(60px);
+  z-index: -1;
+}
+
+/* Legacy watercolor background utility */
+.bg-watercolor {
+  background: var(--bg-watercolor-gradient);
+  background-attachment: fixed;
+}
+
+/* ============================================
+   WATERCOLOR SPLASH EFFECTS
+   ============================================ */
+
+.watercolor-splash {
+  mask-image: radial-gradient(circle at center, black 40%, transparent 90%);
+  -webkit-mask-image: radial-gradient(circle at center, black 40%, transparent 90%);
+}
+
+.splash-yellow {
+  background: radial-gradient(circle at 30% 30%, #F9E79F 0%, #F4D03F 100%);
+  border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+}
+
+.splash-blue {
+  background: radial-gradient(circle at 70% 40%, #7FB3D5 0%, #5499C7 100%);
+  border-radius: 50% 50% 30% 70% / 60% 40% 70% 30%;
+}
+
+.splash-green {
+  background: radial-gradient(circle at 40% 60%, #A9DFBF 0%, #52BE80 100%);
+  border-radius: 60% 40% 50% 50% / 30% 60% 40% 70%;
+}
+
+.splash-primary {
+  background: radial-gradient(circle at 50% 50%, #A9DFBF 0%, #4A7C59 100%);
+  border-radius: 45% 55% 40% 60% / 55% 45% 65% 35%;
+}
+
+/* SVG liquid filter effect */
+.paint-drip {
+  filter: url('#liquid');
+}
+
+/* ============================================
+   WATERCOLOR DAB EFFECTS (for icons)
+   ============================================ */
+
+.watercolor-dab {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 3rem;
+  height: 3rem;
+  filter: blur(8px) contrast(1.2) saturate(1.4);
+  opacity: 0.7;
+  transition: transform 0.5s ease;
+  mask-image: radial-gradient(circle at center, black 30%, transparent 80%);
+  -webkit-mask-image: radial-gradient(circle at center, black 30%, transparent 80%);
+}
+
+.group:hover .watercolor-dab {
+  transform: translate(-50%, -50%) scale(1.25);
+}
+
+.dab-yellow {
+  background: radial-gradient(circle, #F4D03F 0%, #D4AC0D 100%);
+  border-radius: 45% 55% 70% 30% / 40% 50% 60% 50%;
+}
+
+.dab-blue {
+  background: radial-gradient(circle, #5499C7 0%, #2980B9 100%);
+  border-radius: 50% 50% 30% 70% / 60% 40% 70% 30%;
+}
+
+.dab-green {
+  background: radial-gradient(circle, #52BE80 0%, #27AE60 100%);
+  border-radius: 60% 40% 50% 50% / 30% 60% 40% 70%;
+}
+
+.dab-primary {
+  background: radial-gradient(circle, #4A7C59 0%, #2D4C36 100%);
+  border-radius: 40% 60% 45% 55% / 50% 40% 60% 50%;
+}
+
+/* ============================================
+   COMPONENT STYLES
+   ============================================ */
+
+/* Capability cards (Expertise section) */
+.capability-card {
+  background: rgba(255, 255, 255, 0.4);
+  border: 1px solid #e2e8f0;
+  padding: 1.25rem;
+  border-radius: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+.capability-card:hover {
+  border-color: rgba(74, 124, 89, 0.3);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* Open to Work cards */
+.otw-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid #f1f5f9;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.otw-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.1);
+}
+
+.otw-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: 1rem;
+  opacity: 0.3;
+  background: linear-gradient(135deg, rgba(74, 124, 89, 0.1), rgba(127, 179, 213, 0.1), rgba(249, 231, 159, 0.1));
+  filter: blur(2px);
+}
+
+/* Section dividers */
+.section-divider-h {
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.1), transparent);
+}
+
+/* ============================================
+   SHADOWS & EFFECTS
+   ============================================ */
+
+.shadow-soft {
+  box-shadow: var(--shadow-soft);
+}
+
+.shadow-soft-lg {
+  box-shadow: var(--shadow-soft-lg);
+}
+
+.shadow-hover {
+  box-shadow: var(--shadow-hover);
+}
+
+/* Card hover effect */
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: scale(1.02);
+  box-shadow: var(--shadow-hover);
+}
+
+/* Watercolor pill styles */
+.pill-watercolor {
+  background: linear-gradient(135deg, var(--color-watercolor-lavender) 0%, var(--color-watercolor-sky) 100%);
+  border-radius: 9999px;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  display: inline-block;
+}
+
+/* ============================================
+   ANIMATIONS
+   ============================================ */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.5s ease-out forwards;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.3s ease-out forwards;
+}
+
+/* Staggered animation delays */
+.animation-delay-100 {
+  animation-delay: 0.1s;
+}
+
+.animation-delay-200 {
+  animation-delay: 0.2s;
+}
+
+.animation-delay-300 {
+  animation-delay: 0.3s;
+}
+
+.animation-delay-400 {
+  animation-delay: 0.4s;
+}
+
+.animation-delay-500 {
+  animation-delay: 0.5s;
+}
+
+/* ============================================
+   ACCESSIBILITY & SELECTION
+   ============================================ */
+
+:focus-visible {
+  outline: 2px solid var(--color-primary-500);
+  outline-offset: 2px;
+}
+
+::selection {
+  background-color: var(--color-primary-200);
+  color: var(--color-primary-900);
+}
+
+/* ============================================
+   MATERIAL SYMBOLS
+   ============================================ */
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
