@@ -45,7 +45,7 @@ export default function HomePage() {
                     </a>
                     <div className="flex gap-4">
                         <a
-                            href="https://linkedin.com"
+                            href="https://www.linkedin.com/in/kylewegner/"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="p-4 bg-white border-2 border-gray-200 rounded-2xl text-gray-800 hover:border-primary-300 hover:text-primary-600 transition-all shadow-sm hover:shadow-md"
@@ -56,7 +56,7 @@ export default function HomePage() {
                             </svg>
                         </a>
                         <a
-                            href="https://github.com"
+                            href="https://github.com/metaky"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="p-4 bg-white border-2 border-gray-200 rounded-2xl text-gray-800 hover:border-primary-300 hover:text-primary-600 transition-all shadow-sm hover:shadow-md"

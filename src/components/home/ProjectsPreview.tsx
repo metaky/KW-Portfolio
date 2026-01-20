@@ -75,16 +75,7 @@ export default function ProjectsPreview() {
                                     </div>
                                 </div>
 
-                                <div className="flex gap-2 mb-8">
-                                    {project.techStack.slice(0, 3).map((tech) => (
-                                        <span
-                                            key={tech}
-                                            className={`text-[10px] uppercase font-bold tracking-widest ${colors.badgeText} ${colors.badgeBg} px-2 py-1 rounded`}
-                                        >
-                                            {tech}
-                                        </span>
-                                    ))}
-                                </div>
+
 
                                 {project.externalUrl ? (
                                     <a
@@ -93,12 +84,20 @@ export default function ProjectsPreview() {
                                         rel="noopener noreferrer"
                                         className="inline-flex items-center text-base font-semibold hover:text-primary-600 transition-colors gap-2"
                                     >
-                                        View Project
+                                        {project.buttonText || "View Project"}
                                         <span className="material-symbols-outlined text-sm">arrow_forward</span>
                                     </a>
+                                ) : 'internalUrl' in project && project.internalUrl ? (
+                                    <Link
+                                        href={project.internalUrl}
+                                        className="inline-flex items-center text-base font-semibold hover:text-primary-600 transition-colors gap-2"
+                                    >
+                                        {project.buttonText || "View Project"}
+                                        <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                                    </Link>
                                 ) : (
                                     <span className="inline-flex items-center text-base font-semibold text-gray-400 gap-2">
-                                        Concept Only
+                                        {project.buttonText || "Concept Only"}
                                     </span>
                                 )}
                             </div>

@@ -18,13 +18,13 @@ export default function ExpertiseCards() {
                     </h2>
                 </div>
                 <p className="text-gray-600 leading-relaxed text-lg mb-8 max-w-4xl">
-                    With over a decade of experience across high-stakes industries, I blend strategic brand thinking with data-driven execution. My path has been shaped by diverse sectors where clarity and impact are paramount.
+                    With nearly two decades of marketing & advertising experience across high-stakes industries, I blend strategic consumer-centric thinking with data-driven execution. My path has been shaped by diverse sectors where clarity and impact are paramount.
                 </p>
 
                 {/* Action Buttons */}
                 <div className="flex flex-wrap gap-4 mb-12">
                     <a
-                        href="https://www.linkedin.com"
+                        href="https://www.linkedin.com/in/kylewegner/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="bg-primary-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-primary-700 hover:shadow-lg hover:shadow-primary-600/30 transition-all flex items-center gap-2 text-base"
@@ -35,7 +35,7 @@ export default function ExpertiseCards() {
                         View LinkedIn
                     </a>
                     <a
-                        href="mailto:hello@kylewegner.com"
+                        href="/contact"
                         className="bg-primary-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-primary-700 hover:shadow-lg hover:shadow-primary-600/30 transition-all flex items-center gap-2 text-base"
                     >
                         <span className="material-symbols-outlined text-lg">mail</span>

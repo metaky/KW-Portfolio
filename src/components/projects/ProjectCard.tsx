@@ -36,19 +36,7 @@ export default function ProjectCard({
                     <p className="text-gray-500 mb-6">{longDescription}</p>
                 )}
 
-                {/* Tech Stack */}
-                <div className="mb-6">
-                    <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-3">
-                        Built With
-                    </h3>
-                    <div className="flex flex-wrap gap-2">
-                        {techStack.map((tech) => (
-                            <Badge key={tech} variant="primary">
-                                {tech}
-                            </Badge>
-                        ))}
-                    </div>
-                </div>
+
 
                 {/* Action Button */}
                 <div className="pt-4 border-t border-gray-100">

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Button from "@/components/ui/Button";
 import { SITE_CONFIG } from "@/lib/constants";
 
@@ -8,11 +9,14 @@ export default function HeroSection() {
                 <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
                     {/* Profile Image - Rotated Square Style */}
                     <div className="flex-shrink-0">
-                        <div className="w-48 h-48 md:w-64 md:h-64 rounded-2xl overflow-hidden shadow-2xl rotate-3 bg-white p-2">
-                            {/* Placeholder avatar - replace with actual image */}
-                            <div className="w-full h-full rounded-xl bg-gradient-to-br from-primary-200 to-primary-400 flex items-center justify-center">
-                                <span className="text-7xl">👤</span>
-                            </div>
+                        <div className="w-48 h-48 md:w-64 md:h-64 rounded-2xl overflow-hidden shadow-2xl rotate-3 bg-white p-2 relative">
+                            <Image
+                                src="/profile.png"
+                                alt={SITE_CONFIG.name}
+                                fill
+                                className="object-cover rounded-xl"
+                                priority
+                            />
                         </div>
                     </div>
 
@@ -26,7 +30,7 @@ export default function HeroSection() {
                             <span className="text-primary-500 font-semibold">Strategic Marketing</span>
                             {" "}and{" "}
                             <span className="text-primary-500 font-semibold italic underline decoration-accent-blue/50 underline-offset-4">
-                                Independent Software Development
+                                Disability-Empowering Software Development
                             </span>.
                         </p>
 
