@@ -37,7 +37,7 @@ export default function HomePage() {
                 </p>
                 <div className="flex flex-col md:flex-row justify-center items-center gap-6">
                     <a
-                        href={`mailto:${SITE_CONFIG.email}`}
+                        href="/contact"
                         className="bg-primary-600 text-white px-10 py-5 rounded-full font-semibold text-lg hover:bg-primary-700 hover:shadow-xl hover:shadow-primary-600/30 transition-all flex items-center gap-3"
                     >
                         <span className="material-symbols-outlined text-2xl">mail</span>
