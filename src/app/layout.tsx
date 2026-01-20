@@ -3,6 +3,7 @@ import { Playfair_Display, Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import PostHogProvider from "@/components/providers/PostHogProvider";
 
 const playfair = Playfair_Display({
     variable: "--font-playfair",
@@ -63,22 +64,24 @@ export default function RootLayout({
                 />
             </head>
             <body className="min-h-screen flex flex-col bg-background-light" suppressHydrationWarning>
-                {/* SVG Filters for watercolor effects */}
-                <svg style={{ position: 'absolute', width: 0, height: 0 }} xmlns="http://www.w3.org/2000/svg">
-                    <defs>
-                        <filter id="liquid">
-                            <feTurbulence baseFrequency="0.02" numOctaves={3} result="noise" type="fractalNoise" />
-                            <feDisplacementMap in="SourceGraphic" in2="noise" scale={15} />
-                        </filter>
-                    </defs>
-                </svg>
+                <PostHogProvider>
+                    {/* SVG Filters for watercolor effects */}
+                    <svg style={{ position: 'absolute', width: 0, height: 0 }} xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <filter id="liquid">
+                                <feTurbulence baseFrequency="0.02" numOctaves={3} result="noise" type="fractalNoise" />
+                                <feDisplacementMap in="SourceGraphic" in2="noise" scale={15} />
+                            </filter>
+                        </defs>
+                    </svg>
 
-                {/* Fixed watercolor background */}
-                <div className="fixed inset-0 watercolor-bg pointer-events-none" aria-hidden="true" />
+                    {/* Fixed watercolor background */}
+                    <div className="fixed inset-0 watercolor-bg pointer-events-none" aria-hidden="true" />
 
-                <Header />
-                <main className="flex-1 relative">{children}</main>
-                <Footer />
+                    <Header />
+                    <main className="flex-1 relative">{children}</main>
+                    <Footer />
+                </PostHogProvider>
             </body>
         </html>
     );
