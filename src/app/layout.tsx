@@ -18,6 +18,10 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+    metadataBase: new URL("https://www.kylewegner.com"),
+    alternates: {
+        canonical: "/",
+    },
     title: "Kyle Wegner | Strategy & Software Development",
     description:
         "Portfolio of Kyle Wegner - Marketing strategist and indie software developer. Specializing in brand strategy, CRM, and creating thoughtful digital products.",
@@ -30,6 +34,10 @@ export const metadata: Metadata = {
         "Fractional Leadership",
     ],
     authors: [{ name: "Kyle Wegner" }],
+    icons: {
+        icon: "/favicon.png",
+        apple: "/favicon.png",
+    },
     openGraph: {
         title: "Kyle Wegner | Strategy & Software Development",
         description:
