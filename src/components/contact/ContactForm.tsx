@@ -88,7 +88,8 @@ export default function ContactForm() {
                 setIsSuccess(true);
                 setFormData({ name: "", email: "", subject: "", message: "" });
             } else {
-                setSubmitError("Something went wrong. Please try again.");
+                console.error("Web3Forms error:", data);
+                setSubmitError(data.message || "Something went wrong. Please try again.");
             }
         } catch {
             setSubmitError("Failed to send message. Please try again later.");
