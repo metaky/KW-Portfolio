@@ -26,7 +26,7 @@ export default function HeroSection() {
                             {SITE_CONFIG.name}
                         </h1>
                         <p className="text-xl md:text-2xl text-gray-600 font-light max-w-2xl italic mb-6 animate-slide-up animation-delay-100">
-                            Bridging the gap between{" "}
+                            Deeply passionate about{" "}
                             <span className="text-primary-500 font-semibold">Strategic Marketing</span>
                             {" "}and{" "}
                             <span className="text-primary-500 font-semibold italic underline decoration-accent-blue/50 underline-offset-4">
