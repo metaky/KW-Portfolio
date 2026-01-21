@@ -43,7 +43,7 @@ export default function HeroSection() {
                                 Indie Dev
                             </span>
                             <span className="px-4 py-1.5 rounded-full bg-accent-green/20 text-green-800 border border-accent-green/30 text-sm font-medium">
-                                Product Visionary
+                                Disabilities Advocate
                             </span>
                         </div>
 
