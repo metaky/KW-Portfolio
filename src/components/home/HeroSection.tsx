@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Button from "@/components/ui/Button";
 import { SITE_CONFIG } from "@/lib/constants";
+import profileHero from "@/assets/profile-hero.webp";
 
 export default function HeroSection() {
     return (
@@ -9,13 +9,14 @@ export default function HeroSection() {
                 <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
                     {/* Profile Image - Rotated Square Style */}
                     <div className="flex-shrink-0">
-                        <div className="w-48 h-48 md:w-64 md:h-64 rounded-2xl overflow-hidden shadow-2xl rotate-3 bg-white p-2 relative">
+                        <div className="w-48 h-48 md:w-64 md:h-64 rounded-2xl overflow-hidden shadow-2xl rotate-3 bg-white p-2">
                             <Image
-                                src="/profile.png"
+                                src={profileHero}
                                 alt={SITE_CONFIG.name}
-                                fill
-                                className="object-cover rounded-xl"
                                 priority
+                                placeholder="blur"
+                                sizes="(min-width: 768px) 256px, 192px"
+                                className="w-full h-full object-cover rounded-xl"
                             />
                         </div>
                     </div>
