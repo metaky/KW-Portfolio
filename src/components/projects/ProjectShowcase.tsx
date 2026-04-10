@@ -1,6 +1,7 @@
+import Image from "next/image";
 import CategoryBadge from "@/components/ui/CategoryBadge";
-import Button from "@/components/ui/Button";
-import Badge from "@/components/ui/Badge";
+import Icon from "@/components/ui/Icon";
+import type { IconName } from "@/components/ui/Icon";
 
 interface ProjectShowcaseProps {
     title: string;
@@ -11,7 +12,7 @@ interface ProjectShowcaseProps {
     buttonText: string | null;
     conceptOnly?: boolean;
     category: string;
-    categoryIcon: string;
+    categoryIcon: IconName;
     categoryColor: "blue" | "green" | "yellow" | "primary";
     imagePosition?: "left" | "right";
     image?: string;
@@ -78,7 +79,7 @@ export default function ProjectShowcase({
                 {conceptOnly ? (
                     <div className="flex flex-col items-start">
                         <span className="inline-flex items-center px-6 py-3 text-sm font-medium text-gray-500 bg-gray-100 rounded-full">
-                            <span className="material-symbols-outlined text-[18px] mr-2">lightbulb</span>
+                            <Icon name="lightbulb" className="mr-2 h-[18px] w-[18px]" />
                             Personal Use Only
                         </span>
                         <span className="text-xs text-gray-400 mt-2 ml-1">This app is built exclusively for 2 users</span>
@@ -91,7 +92,7 @@ export default function ProjectShowcase({
                         className={`inline-flex items-center gap-2 text-white px-8 py-4 rounded-full font-bold transition-all hover:shadow-lg ${colors.button}`}
                     >
                         {buttonText}
-                        <span className="material-symbols-outlined">arrow_forward</span>
+                        <Icon name="arrow_forward" className="h-5 w-5" />
                     </a>
                 ) : null}
             </div>
@@ -113,10 +114,12 @@ export default function ProjectShowcase({
                 >
                     {image ? (
                         <div className="relative w-full h-full bg-white rounded-lg overflow-hidden shadow-inner">
-                            <img
+                            <Image
                                 src={image}
                                 alt={title}
-                                className="w-full h-full object-cover"
+                                fill
+                                sizes="(min-width: 1024px) 480px, (min-width: 768px) 40vw, 100vw"
+                                className="object-cover"
                             />
                         </div>
                     ) : (

@@ -1,6 +1,8 @@
+import Icon from "@/components/ui/Icon";
+
 interface CategoryBadgeProps {
     name: string;
-    icon: string;
+    icon: React.ComponentProps<typeof Icon>["name"];
     color: "blue" | "green" | "yellow" | "primary";
 }
 
@@ -16,7 +18,7 @@ export default function CategoryBadge({ name, icon, color }: CategoryBadgeProps)
         <div
             className={`inline-flex items-center gap-2 px-3 py-1 rounded-full text-sm font-semibold uppercase tracking-wider ${colorClasses[color]}`}
         >
-            <span className="material-symbols-outlined text-[18px]">{icon}</span>
+            <Icon name={icon} className="h-[18px] w-[18px]" />
             {name}
         </div>
     );

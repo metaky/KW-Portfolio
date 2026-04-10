@@ -4,6 +4,7 @@ import IndustryVerticals from "@/components/home/IndustryVerticals";
 import OpenToWork from "@/components/home/OpenToWork";
 import ProjectsPreview from "@/components/home/ProjectsPreview";
 import { SITE_CONFIG } from "@/lib/constants";
+import Icon from "@/components/ui/Icon";
 
 export default function HomePage() {
     return (
@@ -40,7 +41,7 @@ export default function HomePage() {
                         href="/contact"
                         className="bg-primary-600 text-white px-10 py-5 rounded-full font-semibold text-lg hover:bg-primary-700 hover:shadow-xl hover:shadow-primary-600/30 transition-all flex items-center gap-3"
                     >
-                        <span className="material-symbols-outlined text-2xl">mail</span>
+                        <Icon name="mail" className="h-6 w-6" />
                         Get In Touch
                     </a>
                     <div className="flex gap-4">

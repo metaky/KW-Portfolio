@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { SITE_CONFIG } from "@/lib/constants";
 import profileHero from "@/assets/profile-hero.webp";
+import Icon from "@/components/ui/Icon";
 
 export default function HeroSection() {
     return (
@@ -55,7 +56,7 @@ export default function HeroSection() {
                                 className="inline-flex items-center gap-3 px-8 py-4 border-2 border-primary-500/60 text-primary-600 font-semibold text-lg rounded-full transition-all hover:bg-primary-50 hover:border-primary-600"
                             >
                                 Explore Indie Projects
-                                <span className="material-symbols-outlined text-xl">arrow_downward</span>
+                                <Icon name="arrow_downward" className="h-5 w-5" />
                             </a>
                         </div>
                     </div>

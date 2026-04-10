@@ -1,4 +1,5 @@
 import { EXPERTISE_AREAS } from "@/lib/constants";
+import Icon from "@/components/ui/Icon";
 
 const iconColorMap: Record<string, string> = {
     primary: "text-primary-500",
@@ -12,7 +13,7 @@ export default function ExpertiseCards() {
         <section className="py-8">
             <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center gap-4 mb-6">
-                    <span className="material-symbols-outlined text-primary-500">business_center</span>
+                    <Icon name="business_center" className="h-7 w-7 text-primary-500" />
                     <h2 className="text-4xl font-serif italic text-gray-900">
                         Marketing Expertise
                     </h2>
@@ -38,7 +39,7 @@ export default function ExpertiseCards() {
                         href="/contact"
                         className="bg-primary-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-primary-700 hover:shadow-lg hover:shadow-primary-600/30 transition-all flex items-center gap-2 text-base"
                     >
-                        <span className="material-symbols-outlined text-lg">mail</span>
+                        <Icon name="mail" className="h-[18px] w-[18px]" />
                         Contact Me
                     </a>
                 </div>
@@ -50,9 +51,7 @@ export default function ExpertiseCards() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl">
                     {EXPERTISE_AREAS.map((area) => (
                         <div key={area.title} className="capability-card">
-                            <span className={`material-symbols-outlined ${iconColorMap[area.color]} mb-3`}>
-                                {area.icon}
-                            </span>
+                            <Icon name={area.icon} className={`mb-3 h-7 w-7 ${iconColorMap[area.color]}`} />
                             <h4 className="font-bold text-gray-900 mb-1 text-lg">{area.title}</h4>
                             <p className="text-sm text-gray-500">{area.description}</p>
                         </div>

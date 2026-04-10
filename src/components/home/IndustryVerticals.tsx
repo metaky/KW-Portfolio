@@ -1,4 +1,5 @@
 import { INDUSTRY_VERTICALS } from "@/lib/constants";
+import Icon from "@/components/ui/Icon";
 
 const splashColorMap: Record<string, string> = {
     yellow: "splash-yellow",
@@ -32,9 +33,7 @@ export default function IndustryVerticals() {
 
                             <div className="relative z-10">
                                 <div className="flex items-center gap-3 mb-2">
-                                    <span className={`material-symbols-outlined ${iconColorMap[vertical.color]}`}>
-                                        {vertical.icon}
-                                    </span>
+                                    <Icon name={vertical.icon} className={`h-6 w-6 ${iconColorMap[vertical.color]}`} />
                                     <h4 className="font-bold text-gray-900 text-lg">{vertical.name}</h4>
                                 </div>
                                 <p className="text-sm text-gray-600 leading-relaxed italic">

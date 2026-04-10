@@ -1,4 +1,5 @@
 import { OPEN_TO_WORK } from "@/lib/constants";
+import Icon from "@/components/ui/Icon";
 
 const dabColorMap: Record<string, string> = {
     blue: "dab-blue",
@@ -19,7 +20,7 @@ export default function OpenToWork() {
         <section className="py-8">
             <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center gap-4 mb-6">
-                    <span className="material-symbols-outlined text-primary-500">handshake</span>
+                    <Icon name="handshake" className="h-7 w-7 text-primary-500" />
                     <h2 className="text-4xl font-serif italic text-gray-900">
                         Open to Work
                     </h2>
@@ -35,9 +36,10 @@ export default function OpenToWork() {
                                 {/* Icon with watercolor dab */}
                                 <div className="relative h-10 w-10 flex items-center justify-center">
                                     <div className={`watercolor-dab ${dabColorMap[item.color]}`} />
-                                    <span className={`material-symbols-outlined ${iconColorMap[item.color]} relative z-10 text-2xl`}>
-                                        {item.icon}
-                                    </span>
+                                    <Icon
+                                        name={item.icon}
+                                        className={`relative z-10 h-6 w-6 ${iconColorMap[item.color]}`}
+                                    />
                                 </div>
                                 <h4 className="font-bold text-gray-900 text-lg">{item.title}</h4>
                             </div>

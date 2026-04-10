@@ -1,7 +1,7 @@
 import Link from "next/link";
-import Badge from "@/components/ui/Badge";
-import Button from "@/components/ui/Button";
 import { PROJECTS } from "@/lib/constants";
+import Icon from "@/components/ui/Icon";
+import type { IconName } from "@/components/ui/Icon";
 
 // Color schemes for each project accent color
 const colorSchemes: Record<string, { iconBg: string; iconText: string; badgeBg: string; badgeText: string }> = {
@@ -32,7 +32,7 @@ const colorSchemes: Record<string, { iconBg: string; iconText: string; badgeBg: 
 };
 
 // Icon mapping for each project
-const projectIcons: Record<string, string> = {
+const projectIcons: Record<string, IconName> = {
     declarative: "accessibility_new",
     "pda-your-iep": "volunteer_activism",
     "watch-match": "movie",
@@ -45,7 +45,7 @@ export default function ProjectsPreview() {
         <section className="py-8" id="indie-projects">
             <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center gap-4 mb-8">
-                    <span className="material-symbols-outlined text-primary-500">terminal</span>
+                    <Icon name="terminal" className="h-7 w-7 text-primary-500" />
                     <h2 className="text-4xl font-serif italic text-gray-900">
                         Indie Projects
                     </h2>
@@ -54,7 +54,7 @@ export default function ProjectsPreview() {
                 <div className="grid grid-cols-1 gap-10 max-w-4xl">
                     {featuredProjects.map((project) => {
                         const colors = colorSchemes[project.categoryColor] || colorSchemes.primary;
-                        const icon = projectIcons[project.id] || "code";
+                        const icon = projectIcons[project.id] || "terminal";
 
                         return (
                             <div
@@ -69,9 +69,7 @@ export default function ProjectsPreview() {
                                         <p className="text-gray-600 text-lg">{project.description}</p>
                                     </div>
                                     <div className={`w-14 h-14 ${colors.iconBg} ${colors.iconText} flex items-center justify-center rounded-lg flex-shrink-0 ml-4`}>
-                                        <span className="material-symbols-outlined text-3xl">
-                                            {icon}
-                                        </span>
+                                        <Icon name={icon} className="h-7 w-7" />
                                     </div>
                                 </div>
 
@@ -85,7 +83,7 @@ export default function ProjectsPreview() {
                                         className="inline-flex items-center text-base font-semibold hover:text-primary-600 transition-colors gap-2"
                                     >
                                         {project.buttonText || "View Project"}
-                                        <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                                        <Icon name="arrow_forward" className="h-4 w-4" />
                                     </a>
                                 ) : 'internalUrl' in project && project.internalUrl ? (
                                     <Link
@@ -93,7 +91,7 @@ export default function ProjectsPreview() {
                                         className="inline-flex items-center text-base font-semibold hover:text-primary-600 transition-colors gap-2"
                                     >
                                         {project.buttonText || "View Project"}
-                                        <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                                        <Icon name="arrow_forward" className="h-4 w-4" />
                                     </Link>
                                 ) : (
                                     <span className="inline-flex items-center text-base font-semibold text-gray-400 gap-2">
@@ -120,4 +118,3 @@ export default function ProjectsPreview() {
         </section>
     );
 }
-
