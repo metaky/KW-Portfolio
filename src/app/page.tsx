@@ -5,10 +5,11 @@ import OpenToWork from "@/components/home/OpenToWork";
 import ProjectsPreview from "@/components/home/ProjectsPreview";
 import { SITE_CONFIG } from "@/lib/constants";
 import Icon from "@/components/ui/Icon";
+import StickyContactBar from "@/components/home/StickyContactBar";
 
 export default function HomePage() {
     return (
-        <div className="flex flex-col gap-12 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 pb-16">
+        <div className="flex flex-col gap-12 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 pb-32">
             <HeroSection />
 
             <ExpertiseCards />
@@ -70,6 +71,8 @@ export default function HomePage() {
                     </div>
                 </div>
             </section>
+
+            <StickyContactBar />
         </div>
     );
 }

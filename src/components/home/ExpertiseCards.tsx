@@ -36,6 +36,7 @@ export default function ExpertiseCards() {
                         View LinkedIn
                     </a>
                     <a
+                        id="homepage-contact-trigger"
                         href="/contact"
                         className="bg-primary-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-primary-700 hover:shadow-lg hover:shadow-primary-600/30 transition-all flex items-center gap-2 text-base"
                     >
