@@ -69,7 +69,7 @@ export default function StickyContactBar() {
                     : "pointer-events-none translate-y-6 opacity-0"
             }`}
         >
-            <div className="mx-auto flex w-full max-w-none items-center justify-between gap-3 border-t border-white/70 bg-white/75 px-5 py-3 shadow-[0_-16px_40px_-24px_rgba(15,23,42,0.55)] backdrop-blur-md sm:gap-4 md:max-w-5xl md:rounded-full md:border md:px-6">
+            <div className="mx-auto flex w-full max-w-none items-center justify-between gap-3 border-t border-white/70 bg-white/75 px-5 py-3 shadow-[0_-16px_40px_-24px_rgba(15,23,42,0.55)] backdrop-blur-md sm:gap-4 md:max-w-2xl md:rounded-full md:border md:px-6">
                 <p className="min-w-0 flex-1 text-left text-sm font-medium leading-snug text-primary-900 sm:text-base">
                     Let&apos;s build something great together.
                 </p>
