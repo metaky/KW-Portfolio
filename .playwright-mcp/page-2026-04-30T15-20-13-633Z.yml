@@ -1,0 +1,208 @@
+- generic [active] [ref=e1]:
+  - img
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - generic [ref=e4]:
+        - link "KW." [ref=e5] [cursor=pointer]:
+          - /url: /
+        - generic [ref=e6]:
+          - link "Home" [ref=e7] [cursor=pointer]:
+            - /url: /
+            - text: Home
+          - link "Projects" [ref=e9] [cursor=pointer]:
+            - /url: /projects
+          - link "Contact" [ref=e10] [cursor=pointer]:
+            - /url: /contact
+  - main [ref=e11]:
+    - generic [ref=e12]:
+      - generic [ref=e15]:
+        - img "Kyle Wegner" [ref=e18]
+        - generic [ref=e19]:
+          - heading "Kyle Wegner" [level=1] [ref=e20]
+          - paragraph [ref=e21]: Deeply passionate about Strategic Marketing and Disability-Empowering Software Development.
+          - list "Professional identifiers" [ref=e22]:
+            - listitem [ref=e23]:
+              - generic [ref=e25]: Marketing Strategist
+            - listitem [ref=e26]:
+              - generic [ref=e28]: Indie Dev
+            - listitem [ref=e29]:
+              - generic [ref=e31]: Disabilities Advocate
+          - link "Explore Indie Projects" [ref=e33] [cursor=pointer]:
+            - /url: "#indie-projects"
+            - text: Explore Indie Projects
+            - img [ref=e34]
+      - generic [ref=e37]:
+        - generic [ref=e38]:
+          - img [ref=e39]
+          - heading "Marketing Expertise" [level=2] [ref=e42]
+        - paragraph [ref=e43]: With nearly two decades of marketing & advertising experience across high-stakes industries, I blend strategic consumer-centric thinking with data-driven execution. My path has been shaped by diverse sectors where clarity and impact are paramount.
+        - generic [ref=e44]:
+          - link "View LinkedIn" [ref=e45] [cursor=pointer]:
+            - /url: https://www.linkedin.com/in/kylewegner/
+            - img [ref=e46]
+            - text: View LinkedIn
+          - link "Contact Me" [ref=e48] [cursor=pointer]:
+            - /url: /contact
+            - img [ref=e49]
+            - text: Contact Me
+        - heading "Core Capabilities" [level=3] [ref=e52]
+        - generic [ref=e53]:
+          - generic [ref=e54]:
+            - img [ref=e55]
+            - heading "Brand Strategy" [level=4] [ref=e59]
+            - paragraph [ref=e60]: Defining identity and positioning for market leaders.
+          - generic [ref=e61]:
+            - img [ref=e62]
+            - heading "CRM & Loyalty" [level=4] [ref=e64]
+            - paragraph [ref=e65]: Fostering deep, lasting customer connections.
+          - generic [ref=e66]:
+            - img [ref=e67]
+            - heading "Omnichannel Growth" [level=4] [ref=e77]
+            - paragraph [ref=e78]: Seamlessly integrating experiences across all platforms.
+          - generic [ref=e79]:
+            - img [ref=e80]
+            - heading "Data Analytics" [level=4] [ref=e83]
+            - paragraph [ref=e84]: Translating complex datasets into actionable insights.
+      - generic [ref=e86]:
+        - heading "Industry Vertical Experience" [level=3] [ref=e87]
+        - generic [ref=e88]:
+          - generic [ref=e91]:
+            - generic [ref=e92]:
+              - img [ref=e93]
+              - heading "CPG" [level=4] [ref=e96]
+            - paragraph [ref=e97]: Driving brand preference & purchase for premier brands like P&G and Altria through omnichannel strategy.
+          - generic [ref=e100]:
+            - generic [ref=e101]:
+              - img [ref=e102]
+              - heading "Financial Services" [level=4] [ref=e104]
+            - paragraph [ref=e105]: Navigating complex regulations to deliver customer-centric digital banking experiences for Wells Fargo and Equifax.
+          - generic [ref=e108]:
+            - generic [ref=e109]:
+              - img [ref=e110]
+              - heading "Pharmaceutical" [level=4] [ref=e115]
+            - paragraph [ref=e116]: Synthesizing clinical data into patient-first narratives for Lilly and Merck that build trust and drive outcomes.
+          - generic [ref=e119]:
+            - generic [ref=e120]:
+              - img [ref=e121]
+              - heading "US Army" [level=4] [ref=e123]
+            - paragraph [ref=e124]: Built our strategic practice from the ground up at RAPP to support national recruiting efforts that use connected CRM for diverse US Army prospecting.
+          - generic [ref=e127]:
+            - generic [ref=e128]:
+              - img [ref=e129]
+              - heading "Retail" [level=4] [ref=e132]
+            - paragraph [ref=e133]: Optimizing customer journeys and digital experiences for 7-Eleven and AT&T to increase conversion and lifetime value across storefronts.
+          - generic [ref=e136]:
+            - generic [ref=e137]:
+              - img [ref=e138]
+              - heading "Technology" [level=4] [ref=e141]
+            - paragraph [ref=e142]: Bridging the gap between engineering and end-users for Samsung with intuitive product communication design.
+      - generic [ref=e145]:
+        - generic [ref=e146]:
+          - img [ref=e147]
+          - heading "Open to Work" [level=2] [ref=e152]
+        - paragraph [ref=e153]: I am currently available for new professional engagements. Here is how we can collaborate to drive impact for your organization or project.
+        - generic [ref=e154]:
+          - generic [ref=e155]:
+            - generic [ref=e156]:
+              - img [ref=e159]
+              - heading "Strategic Consulting" [level=4] [ref=e161]
+            - paragraph [ref=e162]: High-level marketing and product roadmaps designed for sustainable growth.
+          - generic [ref=e163]:
+            - generic [ref=e164]:
+              - img [ref=e167]
+              - heading "Freelance Projects" [level=4] [ref=e169]
+            - paragraph [ref=e170]: On-demand strategic support at leadership & individual contributor levels.
+          - generic [ref=e171]:
+            - generic [ref=e172]:
+              - img [ref=e175]
+              - heading "Board Positions" [level=4] [ref=e180]
+            - paragraph [ref=e181]: Lending strategic oversight and industry expertise to mission-driven boards.
+          - generic [ref=e182]:
+            - generic [ref=e183]:
+              - img [ref=e186]
+              - heading "Fractional Leadership" [level=4] [ref=e191]
+            - paragraph [ref=e192]: Acting CMO, Product Head or similar leadership for nimble teams needing executive-level guidance.
+          - generic [ref=e193]:
+            - generic [ref=e194]:
+              - img [ref=e197]
+              - heading "Advisory Roles" [level=4] [ref=e200]
+            - paragraph [ref=e201]: Ongoing guidance for founders navigating the intersection of tech and marketing.
+          - generic [ref=e202]:
+            - generic [ref=e203]:
+              - img [ref=e206]
+              - heading "Speaking & Workshops" [level=4] [ref=e211]
+            - paragraph [ref=e212]: Engaging sessions on brand strategy, indie development, and digital innovation.
+          - generic [ref=e213]:
+            - generic [ref=e214]:
+              - img [ref=e217]
+              - heading "Audit & Assessment" [level=4] [ref=e218]
+            - paragraph [ref=e219]: Deep-dive evaluations of current marketing tech stacks and brand performance.
+          - generic [ref=e220]:
+            - generic [ref=e221]:
+              - img [ref=e224]
+              - heading "Executive Coaching" [level=4] [ref=e228]
+            - paragraph [ref=e229]: 1-on-1 mentorship for marketing leaders looking to sharpen their technical edge.
+      - generic [ref=e232]:
+        - generic [ref=e233]:
+          - img [ref=e234]
+          - heading "Indie Projects" [level=2] [ref=e236]
+        - generic [ref=e237]:
+          - generic [ref=e238]:
+            - generic [ref=e239]:
+              - generic [ref=e240]:
+                - heading "Declarative App" [level=3] [ref=e241]
+                - paragraph [ref=e242]: A communication app designed to help caregivers and support teams connect more effectively with PDA Autistic individuals.
+              - img [ref=e244]
+            - link "Visit app" [ref=e250] [cursor=pointer]:
+              - /url: https://declarativeapp.org
+              - text: Visit app
+              - img [ref=e251]
+          - generic [ref=e253]:
+            - generic [ref=e254]:
+              - generic [ref=e255]:
+                - heading "PDA Your IEP" [level=3] [ref=e256]
+                - paragraph [ref=e257]: A support toolkit empowering families to advocate for educational accommodations tailored to PDA profile autistic children.
+              - img [ref=e259]
+            - link "See the site" [ref=e263] [cursor=pointer]:
+              - /url: https://PDAyourIEP.org
+              - text: See the site
+              - img [ref=e264]
+          - generic [ref=e266]:
+            - generic [ref=e267]:
+              - generic [ref=e268]:
+                - heading "Watch Match" [level=3] [ref=e269]
+                - paragraph [ref=e270]: A family-friendly media discovery tool that matches viewing preferences across the household to surface shows and movies everyone agrees on.
+              - img [ref=e272]
+            - link "See details" [ref=e274] [cursor=pointer]:
+              - /url: /projects#watch-match
+              - text: See details
+              - img [ref=e275]
+        - link "View All Projects" [ref=e278] [cursor=pointer]:
+          - /url: /projects
+          - text: View All Projects
+          - img [ref=e279]
+      - generic [ref=e281]:
+        - heading "A Little More About Me" [level=2] [ref=e282]
+        - paragraph [ref=e283]: "I believe that great marketing isn't just about selling—it's about telling stories and creating utility. This same philosophy guides my app development. I build tools that solve real problems, designed with the user at the very center. Whether it's crafting a national brand campaign or pushing code for a niche productivity tool, my goal is always the same: clarity, beauty, and impact."
+        - generic [ref=e284]:
+          - link "Get In Touch" [ref=e285] [cursor=pointer]:
+            - /url: /contact
+            - img [ref=e286]
+            - text: Get In Touch
+          - generic [ref=e289]:
+            - link "LinkedIn" [ref=e290] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/kylewegner/
+              - img [ref=e291]
+            - link "GitHub" [ref=e293] [cursor=pointer]:
+              - /url: https://github.com/metaky
+              - img [ref=e294]
+  - contentinfo [ref=e296]:
+    - generic [ref=e298]:
+      - paragraph [ref=e299]: © 2026 Kyle Wegner. All rights reserved.
+      - generic [ref=e300]:
+        - link "LinkedIn" [ref=e301] [cursor=pointer]:
+          - /url: https://www.linkedin.com/in/kylewegner/
+          - img [ref=e302]
+        - link "GitHub" [ref=e304] [cursor=pointer]:
+          - /url: https://github.com/metaky
+          - img [ref=e305]

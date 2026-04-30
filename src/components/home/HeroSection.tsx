@@ -3,6 +3,21 @@ import { SITE_CONFIG } from "@/lib/constants";
 import profileHero from "@/assets/profile-hero.webp";
 import Icon from "@/components/ui/Icon";
 
+const roleMarkers = [
+    {
+        label: "Marketing Strategist",
+        markerClass: "bg-accent-yellow/80 ring-accent-yellow/25",
+    },
+    {
+        label: "Indie Dev",
+        markerClass: "bg-accent-blue/80 ring-accent-blue/25",
+    },
+    {
+        label: "Disabilities Advocate",
+        markerClass: "bg-accent-green/80 ring-accent-green/25",
+    },
+];
+
 export default function HeroSection() {
     return (
         <section className="py-8 md:py-12">
@@ -36,18 +51,20 @@ export default function HeroSection() {
                             </span>.
                         </p>
 
-                        {/* Role Badges */}
-                        <div className="flex flex-wrap gap-3 justify-center md:justify-start mb-8 animate-slide-up animation-delay-200">
-                            <span className="px-4 py-1.5 rounded-full bg-accent-yellow/20 text-yellow-800 border border-accent-yellow/30 text-sm font-medium">
-                                Marketing Strategist
-                            </span>
-                            <span className="px-4 py-1.5 rounded-full bg-accent-blue/20 text-blue-800 border border-accent-blue/30 text-sm font-medium">
-                                Indie Dev
-                            </span>
-                            <span className="px-4 py-1.5 rounded-full bg-accent-green/20 text-green-800 border border-accent-green/30 text-sm font-medium">
-                                Disabilities Advocate
-                            </span>
-                        </div>
+                        <ul
+                            aria-label="Professional identifiers"
+                            className="flex flex-wrap gap-x-5 gap-y-2 justify-center md:justify-start mb-8 animate-slide-up animation-delay-200 text-[0.8rem] font-semibold uppercase tracking-[0.14em] text-gray-600"
+                        >
+                            {roleMarkers.map((role) => (
+                                <li key={role.label} className="inline-flex items-center gap-2">
+                                    <span
+                                        aria-hidden="true"
+                                        className={`h-2.5 w-2.5 shrink-0 rounded-[45%_55%_60%_40%] ring-4 ${role.markerClass}`}
+                                    />
+                                    <span>{role.label}</span>
+                                </li>
+                            ))}
+                        </ul>
 
                         {/* CTA Buttons */}
                         <div className="flex flex-wrap gap-4 justify-center md:justify-start animate-slide-up animation-delay-300">
