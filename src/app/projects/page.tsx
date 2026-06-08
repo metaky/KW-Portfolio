@@ -26,6 +26,7 @@ export default function ProjectsPage() {
                 {PROJECTS.map((project, index) => (
                     <ProjectShowcase
                         key={project.id}
+                        id={project.id}
                         title={project.title}
                         description={project.description}
                         longDescription={project.longDescription}

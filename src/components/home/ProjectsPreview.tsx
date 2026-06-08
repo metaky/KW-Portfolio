@@ -36,10 +36,22 @@ const projectIcons: Record<string, IconName> = {
     declarative: "accessibility_new",
     "pda-your-iep": "volunteer_activism",
     "watch-match": "movie",
+    "coach-console": "analytics",
+};
+
+type ProjectPreviewItem = {
+    id: string;
+    title: string;
+    description: string;
+    buttonText: string | null;
+    externalUrl: string | null;
+    internalUrl?: string;
+    featured: boolean;
+    categoryColor: string;
 };
 
 export default function ProjectsPreview() {
-    const featuredProjects = PROJECTS.filter((p) => p.featured);
+    const featuredProjects = PROJECTS.filter((p) => p.featured) as readonly ProjectPreviewItem[];
 
     return (
         <section className="py-8" id="indie-projects">

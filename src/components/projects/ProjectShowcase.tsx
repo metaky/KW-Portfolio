@@ -4,6 +4,7 @@ import Icon from "@/components/ui/Icon";
 import type { IconName } from "@/components/ui/Icon";
 
 interface ProjectShowcaseProps {
+    id: string;
     title: string;
     description: string;
     longDescription?: string;
@@ -19,6 +20,7 @@ interface ProjectShowcaseProps {
 }
 
 export default function ProjectShowcase({
+    id,
     title,
     description,
     longDescription,
@@ -139,7 +141,7 @@ export default function ProjectShowcase({
     );
 
     return (
-        <section className="grid md:grid-cols-2 gap-12 items-center">
+        <section id={id} className="scroll-mt-24 grid md:grid-cols-2 gap-12 items-center">
             {imagePosition === "left" ? (
                 <>
                     {imageSection}

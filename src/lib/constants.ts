@@ -178,6 +178,22 @@ export const PROJECTS = [
         categoryColor: "yellow",
         image: "/projects/watch-match-showcase.png",
     },
+    {
+        id: "coach-console",
+        title: "Coach's Console",
+        description: "A private soccer-season command center for planning lineups, balancing player roles, and turning weekly coach notes into dashboard-ready season history.",
+        longDescription: "Built for my family's Spring 2026 soccer season, Coach's Console brings roster ratings, availability, Codex draft packets, lineup validation, and season dashboards into one local planning tool.",
+        techStack: ["Node.js", "JavaScript", "Codex", "Playwright"],
+        externalUrl: null,
+        buttonText: "See details",
+        internalUrl: "/projects#coach-console",
+        conceptOnly: true,
+        featured: true,
+        category: "Youth Sports",
+        categoryIcon: "analytics",
+        categoryColor: "primary",
+        image: "/projects/coach-console-showcase.png",
+    },
 ] as const;
 
 export const CONTACT_SUBJECTS = [
