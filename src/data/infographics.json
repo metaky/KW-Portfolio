@@ -1,0 +1,312 @@
+[
+  {
+    "id": "turn-ideas-into-decks",
+    "template": "roadmap",
+    "title": "Turn Ideas Into Decks",
+    "eyebrow": "BUILDER PRACTICE",
+    "domain": "AI + Presentations",
+    "tags": ["Codex", "Presentations", "Strategy"],
+    "description": "A cleaner, more strategic version of the Codex-to-PowerPoint workflow: use AI to structure the deck while keeping judgment, taste, and accuracy human.",
+    "alt": "Infographic showing a four-step roadmap for turning ideas into decks: objective, inputs, story, and polish, with a reminder that strategy and final judgment stay human.",
+    "image": "/infographics/turn-ideas-into-decks.png",
+    "download": "/infographics/turn-ideas-into-decks.png",
+    "accent": "green",
+    "thesis": "Codex can organize the work. You keep the strategy.",
+    "shift": {
+      "label": "Useful shift",
+      "from": "Slides first",
+      "to": "Story first",
+      "note": "A better deck begins with the decision."
+    },
+    "steps": [
+      { "title": "Objective", "body": "Name audience, decision, and outcome." },
+      { "title": "Inputs", "body": "Gather notes, data, and constraints." },
+      { "title": "Story", "body": "Build the narrative before slide design." },
+      { "title": "Polish", "body": "Review accuracy, flow, tone, and readiness." }
+    ],
+    "starter": "Ask for a slide-by-slide narrative outline.",
+    "note": "AI drafts. People decide."
+  },
+  {
+    "id": "brief-before-prompt",
+    "template": "briefCanvas",
+    "renderMode": "imagegenComposite",
+    "title": "The Brief Before The Prompt",
+    "eyebrow": "AI + MARKETING",
+    "domain": "AI + Marketing",
+    "tags": ["Marketing Strategy", "Briefs", "Positioning"],
+    "description": "A strategy-first guide for marketers: clarify the decision, audience tension, promise, proof, and tradeoff before asking AI for ideas.",
+    "alt": "Watercolor infographic showing a vague prompt cloud becoming a clear strategy compass, with five briefing inputs to define before prompting AI: decision, audience tension, promise, proof, and tradeoff.",
+    "image": "/infographics/brief-before-prompt.png",
+    "download": "/infographics/brief-before-prompt.png",
+    "accent": "yellow",
+    "thesis": "Bad AI output is usually a briefing problem.",
+    "shift": {
+      "label": "Useful shift",
+      "from": "Fix the prompt",
+      "to": "Sharpen the brief",
+      "note": "AI gets more useful when the assignment is judgeable."
+    },
+    "steps": [
+      { "title": "Decision", "body": "What choice should the work influence?" },
+      { "title": "Audience tension", "body": "Whose need, fear, or objection matters now?" },
+      { "title": "Promise", "body": "What belief should the work strengthen?" },
+      { "title": "Proof", "body": "What evidence makes the claim credible?" },
+      { "title": "Tradeoff", "body": "What are we choosing not to say or do?" }
+    ],
+    "starter": "Before prompting, write the decision in one sentence.",
+    "note": "AI explores. Strategy chooses."
+  },
+  {
+    "id": "strategy-pressure-test",
+    "template": "matrix",
+    "title": "Pressure-Test The Strategy",
+    "eyebrow": "AI + MARKETING",
+    "domain": "AI + Marketing",
+    "tags": ["Campaigns", "Creative Strategy", "Risk"],
+    "description": "A campaign pressure test for finding weak assumptions, thin proof, exclusion risk, and unclear measurement before production starts.",
+    "alt": "Infographic showing a two-by-two pressure-test matrix for campaign strategy: assumption, proof, exclusion, and measurement.",
+    "image": "/infographics/strategy-pressure-test.png",
+    "download": "/infographics/strategy-pressure-test.png",
+    "accent": "blue",
+    "thesis": "Find the fragile assumption before production makes it expensive.",
+    "shift": {
+      "label": "Useful shift",
+      "from": "Approve the idea",
+      "to": "Stress-test the bet",
+      "note": "Good strategy survives hard questions."
+    },
+    "steps": [
+      { "title": "Assumption", "body": "What must be true for this to work?" },
+      { "title": "Proof", "body": "What evidence supports the main claim?" },
+      { "title": "Exclusion", "body": "Who could this confuse or leave out?" },
+      { "title": "Measure", "body": "What signal changes the next decision?" }
+    ],
+    "starter": "Ask where this strategy is most fragile.",
+    "note": "Do not automate judgment."
+  },
+  {
+    "id": "evidence-led-research-loop",
+    "template": "ladder",
+    "title": "Evidence-Led AI Research",
+    "eyebrow": "AI + RESEARCH",
+    "domain": "AI + Research",
+    "tags": ["Research", "Evidence", "Decision-Making"],
+    "description": "A disciplined research loop for using AI to structure inquiry without turning uncertainty into false confidence.",
+    "alt": "Infographic showing an evidence ladder: question, sources, tensions, implications, with a guardrail to keep evidence and interpretation separate.",
+    "image": "/infographics/evidence-led-research-loop.png",
+    "download": "/infographics/evidence-led-research-loop.png",
+    "accent": "green",
+    "thesis": "Use AI to structure inquiry, not invent certainty.",
+    "shift": {
+      "label": "Useful shift",
+      "from": "Fast summary",
+      "to": "Decision evidence",
+      "note": "Strong synthesis shows what is still unknown."
+    },
+    "steps": [
+      { "title": "Question", "body": "Write the decision the research supports." },
+      { "title": "Sources", "body": "Map credibility, recency, and perspective." },
+      { "title": "Tensions", "body": "Compare disagreement instead of smoothing it." },
+      { "title": "Implications", "body": "Turn evidence into choices and risks." }
+    ],
+    "starter": "Separate evidence from interpretation first.",
+    "note": "Cite, verify, and show uncertainty."
+  },
+  {
+    "id": "trustworthy-ai-workflow-map",
+    "template": "workflow",
+    "title": "Draft Before Automating",
+    "eyebrow": "AI + OPERATIONS",
+    "domain": "AI + Workflow",
+    "tags": ["Workflow", "Privacy", "Automation"],
+    "description": "A trustworthy implementation map for moving from source material to draft output, human approval, and automation only after the workflow earns trust.",
+    "alt": "Infographic showing a workflow map: source, draft, approve, automate, with privacy boundary and human review gates.",
+    "image": "/infographics/trustworthy-ai-workflow-map.png",
+    "download": "/infographics/trustworthy-ai-workflow-map.png",
+    "accent": "blue",
+    "thesis": "Automation should follow trust, not excitement.",
+    "shift": {
+      "label": "Useful shift",
+      "from": "Prompt and publish",
+      "to": "Draft, review, approve",
+      "note": "The safest workflow keeps drafts out of live systems."
+    },
+    "steps": [
+      { "title": "Source", "body": "Define which records count as truth." },
+      { "title": "Draft", "body": "Generate in a private review space." },
+      { "title": "Approve", "body": "Require a clear human yes." },
+      { "title": "Automate", "body": "Scale only after repeated trust." }
+    ],
+    "starter": "Add a review gate before publishing.",
+    "note": "Private data needs safeguards."
+  },
+  {
+    "id": "accessible-content-better-marketing",
+    "template": "checklist",
+    "title": "Accessible Content Is Better Marketing",
+    "eyebrow": "AI + ACCESS",
+    "domain": "AI + Accessibility",
+    "tags": ["Accessibility", "Content", "Marketing"],
+    "description": "A disability-aware content QA model that treats access, dignity, readability, and choice as part of marketing quality.",
+    "alt": "Infographic showing a four-part accessible content checklist: plain, scannable, respectful, and reviewed.",
+    "image": "/infographics/accessible-content-better-marketing.png",
+    "download": "/infographics/accessible-content-better-marketing.png",
+    "accent": "green",
+    "thesis": "Access is content quality, not final polish.",
+    "shift": {
+      "label": "Useful shift",
+      "from": "Readable to us",
+      "to": "Usable by more people",
+      "note": "Good marketing respects attention and energy."
+    },
+    "steps": [
+      { "title": "Plain", "body": "Remove jargon and buried actions." },
+      { "title": "Scannable", "body": "Use headings, lists, and clear labels." },
+      { "title": "Respectful", "body": "Avoid pity, blame, or deficit framing." },
+      { "title": "Reviewed", "body": "Let disabled users shape assumptions." }
+    ],
+    "starter": "Check the message for cognitive load.",
+    "note": "AI flags barriers. People validate."
+  },
+  {
+    "id": "advocacy-prep-not-replacement",
+    "template": "prepMap",
+    "title": "Advocacy Prep, Not Replacement",
+    "eyebrow": "AI + ADVOCACY",
+    "domain": "AI + Advocacy",
+    "tags": ["Advocacy", "IEP", "Support"],
+    "description": "A careful parent/supporter workflow for organizing facts and questions without asking AI to make legal, school, or care decisions.",
+    "alt": "Infographic showing advocacy prep steps: privacy, facts, questions, follow-up, with a guardrail that AI prepares but does not replace advocacy.",
+    "image": "/infographics/advocacy-prep-not-replacement.png",
+    "download": "/infographics/advocacy-prep-not-replacement.png",
+    "accent": "yellow",
+    "thesis": "AI can prepare advocacy work. It should not replace advocacy.",
+    "shift": {
+      "label": "Useful shift",
+      "from": "Overwhelming documents",
+      "to": "Clear questions",
+      "note": "Organized notes help people advocate."
+    },
+    "steps": [
+      { "title": "Privacy", "body": "Remove identifying school and health details." },
+      { "title": "Facts", "body": "Separate events from interpretations." },
+      { "title": "Questions", "body": "Name what needs clarification." },
+      { "title": "Follow-Up", "body": "Track commitments, owners, and dates." }
+    ],
+    "starter": "Turn notes into facts and questions.",
+    "note": "People decide rights and care."
+  },
+  {
+    "id": "privacy-first-support-brief",
+    "template": "supportBrief",
+    "title": "The Privacy-First Support Brief",
+    "eyebrow": "AI + CARE",
+    "domain": "AI + Care",
+    "tags": ["Care Coordination", "Privacy", "Family Admin"],
+    "description": "A least-sensitive context brief for families who need to coordinate support without overexposing a child's life.",
+    "alt": "Infographic showing a privacy-first support brief with sections for context, needs, questions, and commitments.",
+    "image": "/infographics/privacy-first-support-brief.png",
+    "download": "/infographics/privacy-first-support-brief.png",
+    "accent": "blue",
+    "thesis": "Share enough to help, not everything you know.",
+    "shift": {
+      "label": "Useful shift",
+      "from": "Retell everything",
+      "to": "Share selectively",
+      "note": "The least-sensitive version is often enough."
+    },
+    "steps": [
+      { "title": "Context", "body": "Say what matters for this meeting." },
+      { "title": "Needs", "body": "Group support needs without overexposure." },
+      { "title": "Questions", "body": "List what others must answer." },
+      { "title": "Commitments", "body": "Track who owns the next step." }
+    ],
+    "starter": "Write the least-sensitive useful brief.",
+    "note": "Privacy comes before convenience."
+  },
+  {
+    "id": "listening-for-child-signals",
+    "template": "signalMap",
+    "title": "Listening For The Child's Signals",
+    "eyebrow": "AI + PARENTING",
+    "domain": "AI + Parenting",
+    "tags": ["Autism", "Parenting", "Support"],
+    "description": "A dignity-first way to use AI for organizing observations around environment, communication, sensory load, recovery, and what helped.",
+    "alt": "Infographic showing a signal map for organizing observations around environment, communication, sensory load, recovery, and what helped.",
+    "image": "/infographics/listening-for-child-signals.png",
+    "download": "/infographics/listening-for-child-signals.png",
+    "accent": "green",
+    "thesis": "Use AI around the child's signals, not over them.",
+    "shift": {
+      "label": "Useful shift",
+      "from": "What went wrong?",
+      "to": "What was hard?",
+      "note": "The goal is support, not control."
+    },
+    "steps": [
+      { "title": "Privacy", "body": "Remove names, faces, dates, and places." },
+      { "title": "Context", "body": "Note environment, demands, and timing." },
+      { "title": "Signals", "body": "Describe communication without blame." },
+      { "title": "Helped", "body": "Document support, recovery, and preferences." }
+    ],
+    "starter": "Ask what context might matter.",
+    "note": "Child safety and agency lead."
+  },
+  {
+    "id": "lower-demand-transitions",
+    "template": "pathway",
+    "title": "Lower-Demand Transitions By Design",
+    "eyebrow": "AI + PARENTING",
+    "domain": "AI + Parenting",
+    "tags": ["Autism", "Transitions", "Access Needs"],
+    "description": "A practical model for changing the environment, reducing friction, offering choices, and preserving agency during transitions.",
+    "alt": "Infographic showing a pathway for lower-demand transitions: moment, friction, choices, recovery.",
+    "image": "/infographics/lower-demand-transitions.png",
+    "download": "/infographics/lower-demand-transitions.png",
+    "accent": "yellow",
+    "thesis": "Change the environment before blaming the child.",
+    "shift": {
+      "label": "Useful shift",
+      "from": "Push through",
+      "to": "Design support",
+      "note": "Predictability and agency lower friction."
+    },
+    "steps": [
+      { "title": "Moment", "body": "Name the change that may feel hard." },
+      { "title": "Friction", "body": "Look for sensory, timing, or demand load." },
+      { "title": "Choices", "body": "Offer acceptable options with agency." },
+      { "title": "Recovery", "body": "Plan time and space afterward." }
+    ],
+    "starter": "Ask how to lower the demand.",
+    "note": "Support is not compliance."
+  },
+  {
+    "id": "what-ai-should-never-decide",
+    "template": "boundaryBoard",
+    "title": "What AI Should Never Decide",
+    "eyebrow": "AI + JUDGMENT",
+    "domain": "AI + Ethics",
+    "tags": ["Responsible AI", "Disability", "Judgment"],
+    "description": "A signature boundary-setting guide for knowing which decisions belong with people, lived experience, and qualified professionals.",
+    "alt": "Infographic showing a boundary board for decisions AI should never make: diagnosis, rights, safety, discipline, placement, consent, and identity.",
+    "image": "/infographics/what-ai-should-never-decide.png",
+    "download": "/infographics/what-ai-should-never-decide.png",
+    "accent": "blue",
+    "thesis": "Responsible AI means knowing what deserves protection.",
+    "shift": {
+      "label": "Useful shift",
+      "from": "Can AI do this?",
+      "to": "Should AI decide this?",
+      "note": "Capability is not permission."
+    },
+    "steps": [
+      { "title": "Rights", "body": "Do not outsource legal or school decisions." },
+      { "title": "Care", "body": "Do not diagnose or prescribe support." },
+      { "title": "Safety", "body": "Do not delegate crisis judgment." },
+      { "title": "Identity", "body": "Do not interpret lived experience for someone." }
+    ],
+    "starter": "Ask what must stay human.",
+    "note": "People hold the decision."
+  }
+]

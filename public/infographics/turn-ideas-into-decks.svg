@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="2400" viewBox="0 0 1600 2400">
+    
+    <defs>
+      <filter id="paperNoise" x="-10%" y="-10%" width="120%" height="120%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="3" seed="7" result="noise"/>
+        <feColorMatrix type="saturate" values="0"/>
+        <feComponentTransfer><feFuncA type="table" tableValues="0 .08"/></feComponentTransfer>
+      </filter>
+      <radialGradient id="washA" cx="30%" cy="20%" r="70%">
+        <stop offset="0%" stop-color="#e1f0e3" stop-opacity=".72"/>
+        <stop offset="70%" stop-color="#e1f0e3" stop-opacity="0"/>
+      </radialGradient>
+      <radialGradient id="washB" cx="80%" cy="18%" r="58%">
+        <stop offset="0%" stop-color="#e0f0f7" stop-opacity=".55"/>
+        <stop offset="72%" stop-color="#e0f0f7" stop-opacity="0"/>
+      </radialGradient>
+      <radialGradient id="washC" cx="80%" cy="86%" r="62%">
+        <stop offset="0%" stop-color="#f7edc9" stop-opacity=".55"/>
+        <stop offset="74%" stop-color="#f7edc9" stop-opacity="0"/>
+      </radialGradient>
+    </defs>
+    <rect width="1600" height="2400" fill="#fbf7ed"/>
+    <rect width="1600" height="2400" fill="url(#washA)"/>
+    <rect width="1600" height="2400" fill="url(#washB)"/>
+    <rect width="1600" height="2400" fill="url(#washC)"/>
+    <rect width="1600" height="2400" filter="url(#paperNoise)" opacity=".8"/>
+    <path d="M48 192 C208 48, 352 96, 512 0" fill="none" stroke="#2f7145" stroke-width="2" opacity=".22"/>
+    <path d="M1248 2232 C1440 2040, 1520 2016, 1632 1824" fill="none" stroke="#2f7145" stroke-width="2" opacity=".22"/>
+  
+    <rect x="42" y="42" width="1516" height="2316" rx="54" fill="none" stroke="rgba(74,124,89,.24)" stroke-width="3"/>
+    
+    <text x="112" y="92" fill="#174125" font-family="'Helvetica Neue', Arial, sans-serif" font-size="27" font-weight="900" letter-spacing="6">BUILDER PRACTICE</text>
+    <text x="112" y="188" fill="#061431" font-family="Georgia, 'Times New Roman', serif" font-size="86" font-weight="700" text-anchor="start" letter-spacing="0"><tspan x="112" dy="0">Turn Ideas Into Decks</tspan></text>
+    <rect x="112" y="330" width="1376" height="178" rx="42" fill="rgba(255,253,247,.92)" stroke="#e1f0e3" stroke-width="2"/>
+    <circle cx="174" cy="419" r="44" fill="#e1f0e3" stroke="#2f7145" stroke-width="3"/>
+    <circle cx="174" cy="419" r="25.5" stroke="#2f7145" stroke-width="4.25" stroke-linecap="round" stroke-linejoin="round" fill="none"/><circle cx="174" cy="419" r="11.7" stroke="#2f7145" stroke-width="4.25" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M174 419 L203.8 389.2 M193.1 387.1 h15.9 v15.9" stroke="#2f7145" stroke-width="4.25" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <text x="248" y="410" fill="#061431" font-family="'Helvetica Neue', Arial, sans-serif" font-size="46" font-weight="800" text-anchor="start" letter-spacing="0"><tspan x="248" dy="0">Codex can organize the work. You keep the</tspan><tspan x="248" dy="56">strategy.</tspan></text>
+  
+    
+      
+    <rect x="112" y="564" width="1376" height="282" rx="38" fill="rgba(255,253,247,.94)" stroke="#d8c8af" stroke-width="2"/>
+    <text x="146" y="620" fill="#174125" font-family="'Helvetica Neue', Arial, sans-serif" font-size="25" font-weight="900" text-anchor="start" letter-spacing="3"><tspan x="146" dy="0">USEFUL SHIFT</tspan></text>
+    <text x="166" y="664" fill="#6f747b" font-family="'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="900" letter-spacing="3">FROM</text>
+    <text x="910.0799999999999" y="664" fill="#174125" font-family="'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="900" letter-spacing="3">TO</text>
+    <text x="166" y="702" fill="#061431" font-family="'Helvetica Neue', Arial, sans-serif" font-size="37" font-weight="800" text-anchor="start" letter-spacing="0"><tspan x="166" dy="0">Slides first</tspan></text>
+    
+    <defs><marker id="arrow704692841692" markerWidth="12" markerHeight="12" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#2f7145"/></marker></defs>
+    <path d="M703.68 692 C772.48 692, 772.48 692, 841.2800000000001 692" fill="none" stroke="#2f7145" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow704692841692)"/>
+  
+    <text x="910.0799999999999" y="702" fill="#061431" font-family="'Helvetica Neue', Arial, sans-serif" font-size="37" font-weight="800" text-anchor="start" letter-spacing="0"><tspan x="910.0799999999999" dy="0">Story first</tspan></text>
+    <line x1="152" y1="760" x2="1448" y2="760" stroke="#d8c8af" stroke-width="2" />
+    <text x="166" y="802" fill="#1d2a3f" font-family="'Helvetica Neue', Arial, sans-serif" font-size="30" font-weight="700" text-anchor="start" letter-spacing="0"><tspan x="166" dy="0">A better deck begins with the decision.</tspan></text>
+  
+      <path d="M220 1062 C430 920, 560 1228, 778 1080 S1146 942, 1368 1162" fill="none" stroke="#2f7145" stroke-width="8" stroke-linecap="round" opacity=".72"/>
+      
+    <circle cx="260" cy="948" r="44" fill="#2f7145"/>
+    <text x="260" y="961" fill="#fffdf7" font-family="'Helvetica Neue', Arial, sans-serif" font-size="36" font-weight="900" text-anchor="middle">1</text>
+    <rect x="182" y="1010" width="280" height="210" rx="32" fill="rgba(255,253,247,.96)" stroke="#e1f0e3" stroke-width="2"/>
+    <text x="214" y="1080" fill="#061431" font-family="'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="900" text-anchor="start" letter-spacing="0"><tspan x="214" dy="0">Objective</tspan></text><text x="214" y="1136" fill="#1d2a3f" font-family="'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="400" text-anchor="start" letter-spacing="0"><tspan x="214" dy="0">Name audience,</tspan><tspan x="214" dy="30">decision, and</tspan><tspan x="214" dy="30">outcome.</tspan></text>
+  
+      
+    <circle cx="578" cy="1158" r="44" fill="#2f7145"/>
+    <text x="578" y="1171" fill="#fffdf7" font-family="'Helvetica Neue', Arial, sans-serif" font-size="36" font-weight="900" text-anchor="middle">2</text>
+    <rect x="500" y="1220" width="280" height="210" rx="32" fill="rgba(255,253,247,.96)" stroke="#e1f0e3" stroke-width="2"/>
+    <text x="532" y="1290" fill="#061431" font-family="'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="900" text-anchor="start" letter-spacing="0"><tspan x="532" dy="0">Inputs</tspan></text><text x="532" y="1346" fill="#1d2a3f" font-family="'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="400" text-anchor="start" letter-spacing="0"><tspan x="532" dy="0">Gather notes,</tspan><tspan x="532" dy="30">data, and</tspan><tspan x="532" dy="30">constraints.</tspan></text>
+  
+      
+    <circle cx="920" cy="948" r="44" fill="#2f7145"/>
+    <text x="920" y="961" fill="#fffdf7" font-family="'Helvetica Neue', Arial, sans-serif" font-size="36" font-weight="900" text-anchor="middle">3</text>
+    <rect x="842" y="1010" width="280" height="210" rx="32" fill="rgba(255,253,247,.96)" stroke="#e1f0e3" stroke-width="2"/>
+    <text x="874" y="1080" fill="#061431" font-family="'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="900" text-anchor="start" letter-spacing="0"><tspan x="874" dy="0">Story</tspan></text><text x="874" y="1136" fill="#1d2a3f" font-family="'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="400" text-anchor="start" letter-spacing="0"><tspan x="874" dy="0">Build the</tspan><tspan x="874" dy="30">narrative before</tspan><tspan x="874" dy="30">slide design.</tspan></text>
+  
+      
+    <circle cx="1238" cy="1158" r="44" fill="#2f7145"/>
+    <text x="1238" y="1171" fill="#fffdf7" font-family="'Helvetica Neue', Arial, sans-serif" font-size="36" font-weight="900" text-anchor="middle">4</text>
+    <rect x="1160" y="1220" width="280" height="210" rx="32" fill="rgba(255,253,247,.96)" stroke="#e1f0e3" stroke-width="2"/>
+    <text x="1192" y="1290" fill="#061431" font-family="'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="900" text-anchor="start" letter-spacing="0"><tspan x="1192" dy="0">Polish</tspan></text><text x="1192" y="1346" fill="#1d2a3f" font-family="'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="400" text-anchor="start" letter-spacing="0"><tspan x="1192" dy="0">Review accuracy,</tspan><tspan x="1192" dy="30">flow, tone, and</tspan><tspan x="1192" dy="30">readiness.</tspan></text>
+  
+    
+    
+    <rect x="112" y="1716" width="1376" height="240" rx="42" fill="rgba(255,253,247,.96)" stroke="#e1f0e3" stroke-width="2"/>
+    <circle cx="176" cy="1836" r="48" fill="#2f7145"/>
+    <path d="M176 1804 C183.8 1828.2 188.6 1830.2 208 1836 C184.7 1843.8 182.8 1848.6 176 1868 C169.2 1845.7 163.4 1842.8 144 1836 C167.3 1829.2 169.2 1823.4 176 1804 Z" fill="#fffdf7" opacity=".86"/>
+    <text x="252" y="1760" fill="#174125" font-family="'Helvetica Neue', Arial, sans-serif" font-size="23" font-weight="900" letter-spacing="4">TRY FIRST</text>
+    <text x="252" y="1812" fill="#061431" font-family="'Helvetica Neue', Arial, sans-serif" font-size="39" font-weight="800" text-anchor="start" letter-spacing="0"><tspan x="252" dy="0">Ask for a slide-by-slide</tspan><tspan x="252" dy="47">narrative outline.</tspan></text>
+    <line x1="918" y1="1750" x2="918" y2="1918" stroke="#d8c8af" stroke-width="2" />
+    <text x="988" y="1760" fill="#6f747b" font-family="'Helvetica Neue', Arial, sans-serif" font-size="23" font-weight="900" letter-spacing="4">GUARDRAIL</text>
+    <text x="988" y="1812" fill="#061431" font-family="'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="800" text-anchor="start" letter-spacing="0"><tspan x="988" dy="0">AI drafts. People</tspan><tspan x="988" dy="42">decide.</tspan></text>
+  
+    
+    <circle cx="134" cy="2284" r="42" fill="none" stroke="#9ca0a6" stroke-width="3"/>
+    <text x="134" y="2299" fill="#898f96" font-family="'Helvetica Neue', Arial, sans-serif" font-size="35" font-weight="800" text-anchor="middle">KW</text>
+    <text x="198" y="2280" fill="#898f96" font-family="'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="800">See more infographics at</text>
+    <text x="198" y="2318" fill="#898f96" font-family="'Helvetica Neue', Arial, sans-serif" font-size="30" font-weight="800">KyleWegner.com/infographics</text>
+  
+  </svg>

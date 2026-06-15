@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="2400" viewBox="0 0 1600 2400">
+    
+    <defs>
+      <filter id="paperNoise" x="-10%" y="-10%" width="120%" height="120%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="3" seed="7" result="noise"/>
+        <feColorMatrix type="saturate" values="0"/>
+        <feComponentTransfer><feFuncA type="table" tableValues="0 .08"/></feComponentTransfer>
+      </filter>
+      <radialGradient id="washA" cx="30%" cy="20%" r="70%">
+        <stop offset="0%" stop-color="#e0f0f7" stop-opacity=".72"/>
+        <stop offset="70%" stop-color="#e0f0f7" stop-opacity="0"/>
+      </radialGradient>
+      <radialGradient id="washB" cx="80%" cy="18%" r="58%">
+        <stop offset="0%" stop-color="#e0f0f7" stop-opacity=".55"/>
+        <stop offset="72%" stop-color="#e0f0f7" stop-opacity="0"/>
+      </radialGradient>
+      <radialGradient id="washC" cx="80%" cy="86%" r="62%">
+        <stop offset="0%" stop-color="#f7edc9" stop-opacity=".55"/>
+        <stop offset="74%" stop-color="#f7edc9" stop-opacity="0"/>
+      </radialGradient>
+    </defs>
+    <rect width="1600" height="2400" fill="#fbf7ed"/>
+    <rect width="1600" height="2400" fill="url(#washA)"/>
+    <rect width="1600" height="2400" fill="url(#washB)"/>
+    <rect width="1600" height="2400" fill="url(#washC)"/>
+    <rect width="1600" height="2400" filter="url(#paperNoise)" opacity=".8"/>
+    <path d="M48 192 C208 48, 352 96, 512 0" fill="none" stroke="#2f718e" stroke-width="2" opacity=".22"/>
+    <path d="M1248 2232 C1440 2040, 1520 2016, 1632 1824" fill="none" stroke="#2f7145" stroke-width="2" opacity=".22"/>
+  
+    <rect x="42" y="42" width="1516" height="2316" rx="54" fill="none" stroke="rgba(74,124,89,.24)" stroke-width="3"/>
+    
+    <text x="112" y="92" fill="#153f55" font-family="'Helvetica Neue', Arial, sans-serif" font-size="27" font-weight="900" letter-spacing="6">AI + CARE</text>
+    <text x="112" y="188" fill="#061431" font-family="Georgia, 'Times New Roman', serif" font-size="86" font-weight="700" text-anchor="start" letter-spacing="0"><tspan x="112" dy="0">The Privacy-First</tspan><tspan x="112" dy="93">Support Brief</tspan></text>
+    <rect x="112" y="330" width="1376" height="178" rx="42" fill="rgba(255,253,247,.92)" stroke="#e0f0f7" stroke-width="2"/>
+    <circle cx="174" cy="419" r="44" fill="#e0f0f7" stroke="#2f718e" stroke-width="3"/>
+    <rect x="149.6" y="417.9" width="48.9" height="36.1" rx="8.5" stroke="#2f718e" stroke-width="4.25" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M159.1 417.9 v-12.8 a14.9 14.9 0 0 1 29.8 0 v12.8" stroke="#2f718e" stroke-width="4.25" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <text x="248" y="410" fill="#061431" font-family="'Helvetica Neue', Arial, sans-serif" font-size="46" font-weight="800" text-anchor="start" letter-spacing="0"><tspan x="248" dy="0">Share enough to help, not everything you</tspan><tspan x="248" dy="56">know.</tspan></text>
+  
+    
+      
+    <rect x="112" y="564" width="1376" height="282" rx="38" fill="rgba(255,253,247,.94)" stroke="#d8c8af" stroke-width="2"/>
+    <text x="146" y="620" fill="#153f55" font-family="'Helvetica Neue', Arial, sans-serif" font-size="25" font-weight="900" text-anchor="start" letter-spacing="3"><tspan x="146" dy="0">USEFUL SHIFT</tspan></text>
+    <text x="166" y="664" fill="#6f747b" font-family="'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="900" letter-spacing="3">FROM</text>
+    <text x="910.0799999999999" y="664" fill="#153f55" font-family="'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="900" letter-spacing="3">TO</text>
+    <text x="166" y="702" fill="#061431" font-family="'Helvetica Neue', Arial, sans-serif" font-size="37" font-weight="800" text-anchor="start" letter-spacing="0"><tspan x="166" dy="0">Retell everything</tspan></text>
+    
+    <defs><marker id="arrow704692841692" markerWidth="12" markerHeight="12" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#2f718e"/></marker></defs>
+    <path d="M703.68 692 C772.48 692, 772.48 692, 841.2800000000001 692" fill="none" stroke="#2f718e" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow704692841692)"/>
+  
+    <text x="910.0799999999999" y="702" fill="#061431" font-family="'Helvetica Neue', Arial, sans-serif" font-size="37" font-weight="800" text-anchor="start" letter-spacing="0"><tspan x="910.0799999999999" dy="0">Share selectively</tspan></text>
+    <line x1="152" y1="760" x2="1448" y2="760" stroke="#d8c8af" stroke-width="2" />
+    <text x="166" y="802" fill="#1d2a3f" font-family="'Helvetica Neue', Arial, sans-serif" font-size="30" font-weight="700" text-anchor="start" letter-spacing="0"><tspan x="166" dy="0">The least-sensitive version is often enough.</tspan></text>
+  
+      <rect x="250" y="930" width="1100" height="640" rx="34" fill="rgba(255,253,247,.96)" stroke="#d8c8af" stroke-width="2"/>
+      <text x="310" y="1006" fill="#153f55" font-family="'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="900" letter-spacing="4">LEAST-SENSITIVE BRIEF</text>
+      
+    <rect x="310" y="1085" width="430" height="162" rx="24" fill="#e0f0f7" stroke="#e0f0f7" stroke-width="2"/>
+    <text x="340" y="1137" fill="#153f55" font-family="'Helvetica Neue', Arial, sans-serif" font-size="23" font-weight="900" letter-spacing="3">01</text>
+    <text x="396" y="1139" fill="#061431" font-family="'Helvetica Neue', Arial, sans-serif" font-size="31" font-weight="900" text-anchor="start" letter-spacing="0"><tspan x="396" dy="0">Context</tspan></text><text x="396" y="1192" fill="#1d2a3f" font-family="'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" text-anchor="start" letter-spacing="0"><tspan x="396" dy="0">Say what matters for this</tspan><tspan x="396" dy="27">meeting.</tspan></text>
+  
+    <rect x="835" y="1085" width="430" height="162" rx="24" fill="rgba(255,253,247,.96)" stroke="#e0f0f7" stroke-width="2"/>
+    <text x="865" y="1137" fill="#153f55" font-family="'Helvetica Neue', Arial, sans-serif" font-size="23" font-weight="900" letter-spacing="3">02</text>
+    <text x="921" y="1139" fill="#061431" font-family="'Helvetica Neue', Arial, sans-serif" font-size="31" font-weight="900" text-anchor="start" letter-spacing="0"><tspan x="921" dy="0">Needs</tspan></text><text x="921" y="1192" fill="#1d2a3f" font-family="'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" text-anchor="start" letter-spacing="0"><tspan x="921" dy="0">Group support needs without</tspan><tspan x="921" dy="27">overexposure.</tspan></text>
+  
+    <rect x="310" y="1310" width="430" height="162" rx="24" fill="#e0f0f7" stroke="#e0f0f7" stroke-width="2"/>
+    <text x="340" y="1362" fill="#153f55" font-family="'Helvetica Neue', Arial, sans-serif" font-size="23" font-weight="900" letter-spacing="3">03</text>
+    <text x="396" y="1364" fill="#061431" font-family="'Helvetica Neue', Arial, sans-serif" font-size="31" font-weight="900" text-anchor="start" letter-spacing="0"><tspan x="396" dy="0">Questions</tspan></text><text x="396" y="1417" fill="#1d2a3f" font-family="'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" text-anchor="start" letter-spacing="0"><tspan x="396" dy="0">List what others must</tspan><tspan x="396" dy="27">answer.</tspan></text>
+  
+    <rect x="835" y="1310" width="430" height="162" rx="24" fill="rgba(255,253,247,.96)" stroke="#e0f0f7" stroke-width="2"/>
+    <text x="865" y="1362" fill="#153f55" font-family="'Helvetica Neue', Arial, sans-serif" font-size="23" font-weight="900" letter-spacing="3">04</text>
+    <text x="921" y="1364" fill="#061431" font-family="'Helvetica Neue', Arial, sans-serif" font-size="31" font-weight="900" text-anchor="start" letter-spacing="0"><tspan x="921" dy="0">Commitments</tspan></text><text x="921" y="1417" fill="#1d2a3f" font-family="'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="400" text-anchor="start" letter-spacing="0"><tspan x="921" dy="0">Track who owns the next</tspan><tspan x="921" dy="27">step.</tspan></text>
+  
+    
+    
+    <rect x="112" y="1716" width="1376" height="240" rx="42" fill="rgba(255,253,247,.96)" stroke="#e0f0f7" stroke-width="2"/>
+    <circle cx="176" cy="1836" r="48" fill="#2f718e"/>
+    <path d="M176 1804 C183.8 1828.2 188.6 1830.2 208 1836 C184.7 1843.8 182.8 1848.6 176 1868 C169.2 1845.7 163.4 1842.8 144 1836 C167.3 1829.2 169.2 1823.4 176 1804 Z" fill="#fffdf7" opacity=".86"/>
+    <text x="252" y="1760" fill="#153f55" font-family="'Helvetica Neue', Arial, sans-serif" font-size="23" font-weight="900" letter-spacing="4">TRY FIRST</text>
+    <text x="252" y="1812" fill="#061431" font-family="'Helvetica Neue', Arial, sans-serif" font-size="39" font-weight="800" text-anchor="start" letter-spacing="0"><tspan x="252" dy="0">Write the least-sensitive</tspan><tspan x="252" dy="47">useful brief.</tspan></text>
+    <line x1="918" y1="1750" x2="918" y2="1918" stroke="#d8c8af" stroke-width="2" />
+    <text x="988" y="1760" fill="#6f747b" font-family="'Helvetica Neue', Arial, sans-serif" font-size="23" font-weight="900" letter-spacing="4">GUARDRAIL</text>
+    <text x="988" y="1812" fill="#061431" font-family="'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="800" text-anchor="start" letter-spacing="0"><tspan x="988" dy="0">Privacy comes before</tspan><tspan x="988" dy="42">convenience.</tspan></text>
+  
+    
+    <circle cx="134" cy="2284" r="42" fill="none" stroke="#9ca0a6" stroke-width="3"/>
+    <text x="134" y="2299" fill="#898f96" font-family="'Helvetica Neue', Arial, sans-serif" font-size="35" font-weight="800" text-anchor="middle">KW</text>
+    <text x="198" y="2280" fill="#898f96" font-family="'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="800">See more infographics at</text>
+    <text x="198" y="2318" fill="#898f96" font-family="'Helvetica Neue', Arial, sans-serif" font-size="30" font-weight="800">KyleWegner.com/infographics</text>
+  
+  </svg>

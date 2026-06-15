@@ -1,0 +1,80 @@
+[
+  {
+    "id": "turn-ideas-into-decks",
+    "template": "roadmap",
+    "full": "public/infographics/turn-ideas-into-decks.png",
+    "thumbnail": "public/infographics/turn-ideas-into-decks-thumb.png",
+    "size": "1600x2400"
+  },
+  {
+    "id": "brief-before-prompt",
+    "template": "briefCanvas",
+    "renderMode": "imagegenComposite",
+    "full": "public/infographics/brief-before-prompt.png",
+    "thumbnail": "public/infographics/brief-before-prompt-thumb.png",
+    "size": "1600x2400"
+  },
+  {
+    "id": "strategy-pressure-test",
+    "template": "matrix",
+    "full": "public/infographics/strategy-pressure-test.png",
+    "thumbnail": "public/infographics/strategy-pressure-test-thumb.png",
+    "size": "1600x2400"
+  },
+  {
+    "id": "evidence-led-research-loop",
+    "template": "ladder",
+    "full": "public/infographics/evidence-led-research-loop.png",
+    "thumbnail": "public/infographics/evidence-led-research-loop-thumb.png",
+    "size": "1600x2400"
+  },
+  {
+    "id": "trustworthy-ai-workflow-map",
+    "template": "workflow",
+    "full": "public/infographics/trustworthy-ai-workflow-map.png",
+    "thumbnail": "public/infographics/trustworthy-ai-workflow-map-thumb.png",
+    "size": "1600x2400"
+  },
+  {
+    "id": "accessible-content-better-marketing",
+    "template": "checklist",
+    "full": "public/infographics/accessible-content-better-marketing.png",
+    "thumbnail": "public/infographics/accessible-content-better-marketing-thumb.png",
+    "size": "1600x2400"
+  },
+  {
+    "id": "advocacy-prep-not-replacement",
+    "template": "prepMap",
+    "full": "public/infographics/advocacy-prep-not-replacement.png",
+    "thumbnail": "public/infographics/advocacy-prep-not-replacement-thumb.png",
+    "size": "1600x2400"
+  },
+  {
+    "id": "privacy-first-support-brief",
+    "template": "supportBrief",
+    "full": "public/infographics/privacy-first-support-brief.png",
+    "thumbnail": "public/infographics/privacy-first-support-brief-thumb.png",
+    "size": "1600x2400"
+  },
+  {
+    "id": "listening-for-child-signals",
+    "template": "signalMap",
+    "full": "public/infographics/listening-for-child-signals.png",
+    "thumbnail": "public/infographics/listening-for-child-signals-thumb.png",
+    "size": "1600x2400"
+  },
+  {
+    "id": "lower-demand-transitions",
+    "template": "pathway",
+    "full": "public/infographics/lower-demand-transitions.png",
+    "thumbnail": "public/infographics/lower-demand-transitions-thumb.png",
+    "size": "1600x2400"
+  },
+  {
+    "id": "what-ai-should-never-decide",
+    "template": "boundaryBoard",
+    "full": "public/infographics/what-ai-should-never-decide.png",
+    "thumbnail": "public/infographics/what-ai-should-never-decide-thumb.png",
+    "size": "1600x2400"
+  }
+]
